@@ -14,6 +14,11 @@ public class JoinActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
 
+        spinner= (Spinner)findViewById(R.id.college);
+        adapter= ArrayAdapter.createFromResource(this, R.array.college, android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+
         spinner= (Spinner)findViewById(R.id.major);
         adapter= ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
