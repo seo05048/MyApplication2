@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name ="major">
-        <item>컴퓨터교육과</item>
-        <item>한문교육과</item>
-        <item>교육학과</item>
-        <item>수학교육학과</item>
-    </string-array>
-</resources>
