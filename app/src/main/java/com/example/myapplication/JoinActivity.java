@@ -20,8 +20,8 @@ public class JoinActivity extends AppCompatActivity {
     DatabaseOpenHelper helper;
     SQLiteDatabase database;
 
-    EditText idEditText;
-    EditText pwEditText;
+    EditText username;
+    EditText password;
     Button btnJoin;
 
     String sql;
@@ -45,8 +45,8 @@ public class JoinActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
 
-        idEditText = (EditText) findViewById(R.id.username);
-        pwEditText = (EditText) findViewById(R.id.password);
+        username = (EditText) findViewById(R.id.username);
+        password = (EditText) findViewById(R.id.password);
 
         btnJoin = (Button) findViewById(R.id.button3);
 
@@ -57,8 +57,8 @@ public class JoinActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String id = idEditText.getText().toString();
-                String pw = pwEditText.getText().toString();
+                String id = username.getText().toString();
+                String pw = password.getText().toString();
 
                 if(id.length() == 0 || pw.length() == 0) {
                     //아이디와 비밀번호는 필수 입력사항입니다.
