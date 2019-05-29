@@ -1,18 +1,25 @@
 package com.example.myapplication;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
+import android.widget.Toast;
 
-import com.example.myapplication.ui.login.LoginActivity;
+import com.example.myapplication.ui.fragment.Fragment1;
+import com.example.myapplication.ui.fragment.Fragment2;
+import com.example.myapplication.ui.fragment.Fragment3;
+import com.example.myapplication.ui.notice.Person;
+import com.example.myapplication.ui.notice.PersonAdapter;
 
 //import android.view.View;
 //import android.support.design.widget.FloatingActionButton;
@@ -21,6 +28,11 @@ import com.example.myapplication.ui.login.LoginActivity;
 //import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    Fragment1 fragment1;
+    Fragment2 fragment2;
+    Fragment3 fragment3;
+
     private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -57,6 +69,43 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         getSupportActionBar().setTitle("SKKUNET");//툴바의 제목
 
+        fragment1 = new Fragment1();
+        fragment2 = new Fragment2();
+        fragment3 = new Fragment3();
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment1).commit();
+
+        BottomNavigationView bottomNavigation = findViewById(R.id.nav_view);
+        bottomNavigation.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        switch(menuItem.getItemId()){
+
+                            case R.id.navigation_home:
+                                Toast.makeText(getApplicationContext(), "공지사항으로 이동", Toast.LENGTH_LONG).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment1).commit();
+                                return true;
+
+                            case R.id.navigation_dashboard:
+                                Toast.makeText(getApplicationContext(), "그룹 친구 찾기로 이동", Toast.LENGTH_LONG).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment2).commit();
+                                return true;
+
+                            case R.id.navigation_notifications:
+                                Toast.makeText(getApplicationContext(), "개별 친구 찾기로 이동", Toast.LENGTH_LONG).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment3).commit();
+                                return true;
+
+                        }
+                        return false;
+                    }
+                }
+
+
+        );
+
+
     }
 
     @Override
@@ -91,4 +140,5 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }
