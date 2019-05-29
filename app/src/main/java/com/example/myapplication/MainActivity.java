@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
@@ -83,17 +85,17 @@ public class MainActivity extends AppCompatActivity {
                         switch(menuItem.getItemId()){
 
                             case R.id.navigation_home:
-                                Toast.makeText(getApplicationContext(), "공지사항으로 이동", Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getApplicationContext(), "공지사항으로 이동", Toast.LENGTH_LONG).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment1).commit();
                                 return true;
 
                             case R.id.navigation_dashboard:
-                                Toast.makeText(getApplicationContext(), "그룹 친구 찾기로 이동", Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getApplicationContext(), "그룹 친구 찾기로 이동", Toast.LENGTH_LONG).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment2).commit();
                                 return true;
 
                             case R.id.navigation_notifications:
-                                Toast.makeText(getApplicationContext(), "개별 친구 찾기로 이동", Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getApplicationContext(), "개별 친구 찾기로 이동", Toast.LENGTH_LONG).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment3).commit();
                                 return true;
 
@@ -140,5 +142,41 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+    public void onButtonbob(View v)
+    {
+        Intent bobIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://open.kakao.com/o/gqcIWRqb"));
+        startActivity(bobIntent);
+    }
+    public void onButttonbeer(View v)
+    {
+        Intent beerIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://open.kakao.com/o/gsl3WRqb"));
+        startActivity(beerIntent);
+    }
+    public void onButttonex(View v)
+    {
+        Intent exIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://open.kakao.com/o/gWPAXRqb"));
+        startActivity(exIntent);
+    }
+    public void onButttongame(View v)
+    {
+        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://open.kakao.com/o/gIb6XRqb"));
+        startActivity(myIntent);
+
+    }
+    public void onButttoncafe(View v)
+    {
+        Intent cafeIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://open.kakao.com/o/gFPVXRqb"));
+        startActivity(cafeIntent);
+
+    }
+    public void onButttonlove(View v)
+    {
+        Intent loveIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://open.kakao.com/o/g5sLXRqb"));
+        startActivity(loveIntent);
+
+    }
+
+
+
 
 }
