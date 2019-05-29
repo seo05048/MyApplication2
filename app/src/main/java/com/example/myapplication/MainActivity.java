@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
@@ -16,7 +15,6 @@ import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
-import com.example.myapplication.ui.login.LoginActivity;
 import com.example.myapplication.ui.fragment.Fragment1;
 import com.example.myapplication.ui.fragment.Fragment2;
 import com.example.myapplication.ui.fragment.Fragment3;
