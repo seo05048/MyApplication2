@@ -46,6 +46,14 @@ public class JoinActivity extends AppCompatActivity {
         adapter= ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
+        spinner= (Spinner)findViewById(R.id.hobby);
+        adapter= ArrayAdapter.createFromResource(this, R.array.hobby, android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner= (Spinner)findViewById(R.id.city);
+        adapter= ArrayAdapter.createFromResource(this, R.array.city, android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);

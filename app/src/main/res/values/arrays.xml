@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name ="major">
+        <item>선택하세요</item>
         <item>컴퓨터교육과</item>
         <item>한문교육과</item>
         <item>교육학과</item>

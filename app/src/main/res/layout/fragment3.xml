@@ -9,9 +9,9 @@
 
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="580dp"
-        android:layout_marginBottom="80dp"
+        android:layout_width="391dp"
+        android:layout_height="657dp"
+        android:layout_marginTop="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,10 +47,13 @@
                         android:textStyle="normal" />
 
                     <Spinner
-                        android:id="@+id/college2"
+                        android:id="@+id/city"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="0dp"
                         android:layout_weight="1" />
 
                 </LinearLayout>
@@ -78,7 +81,7 @@
                             android:textStyle="normal" />
 
                         <Spinner
-                            android:id="@+id/college3"
+                            android:id="@+id/hobby"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
@@ -104,7 +107,7 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:background="#FFF8F8"
-                        tools:srcCompat="@drawable/game" />
+                        app:srcCompat="@drawable/game" />
 
                     <EditText
                         android:id="@+id/editText9"
@@ -284,7 +287,7 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:background="#FFF8F8"
-                        tools:srcCompat="@drawable/eat" />
+                        app:srcCompat="@drawable/eat" />
 
                     <EditText
                         android:id="@+id/editText9"
@@ -374,7 +377,7 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:background="#FFF8F8"
-                        tools:srcCompat="@drawable/exercise" />
+                        app:srcCompat="@drawable/exercise" />
 
                     <EditText
                         android:id="@+id/editText9"
@@ -464,7 +467,7 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:background="#FFF8F8"
-                        tools:srcCompat="@drawable/love" />
+                        app:srcCompat="@drawable/love" />
 
                     <EditText
                         android:id="@+id/editText9"

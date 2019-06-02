@@ -12,7 +12,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     Fragment1 fragment1;
     Fragment2 fragment2;
     Fragment3 fragment3;
+    private ArrayAdapter adapter;
+    private Spinner spinner;
 
     private TextView mTextMessage;
 
@@ -62,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         mTextMessage = findViewById(R.id.message);
@@ -74,6 +80,11 @@ public class MainActivity extends AppCompatActivity {
         fragment1 = new Fragment1();
         fragment2 = new Fragment2();
         fragment3 = new Fragment3();
+
+
+
+
+
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment1).commit();
 
@@ -96,7 +107,11 @@ public class MainActivity extends AppCompatActivity {
 
                             case R.id.navigation_notifications:
                                 //Toast.makeText(getApplicationContext(), "개별 친구 찾기로 이동", Toast.LENGTH_LONG).show();
+
                                 getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment3).commit();
+
+
+
                                 return true;
 
                         }
@@ -106,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         );
+
 
 
     }
