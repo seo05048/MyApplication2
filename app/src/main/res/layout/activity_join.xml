@@ -32,23 +32,32 @@
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
     </android.support.constraint.ConstraintLayout>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5434ec83eaeeddd56bf0ececdff0886f89d22a35
     <TableRow
 
         android:id="@+id/tableRow"
         android:layout_width="394dp"
-        android:layout_height="600dp"
+        android:layout_height="500dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+<<<<<<< HEAD
         android:layout_marginTop="4dp"
+=======
+        android:layout_marginTop="55dp"
+>>>>>>> 5434ec83eaeeddd56bf0ececdff0886f89d22a35
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -481,6 +490,7 @@
 
         </ScrollView>
 
+<<<<<<< HEAD
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
@@ -498,4 +508,26 @@
 
     </TableRow>
 
+=======
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+
+>>>>>>> 5434ec83eaeeddd56bf0ececdff0886f89d22a35
 </android.support.constraint.ConstraintLayout>
