@@ -39,7 +39,10 @@
 
     </android.support.constraint.ConstraintLayout>
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 5434ec83eaeeddd56bf0ececdff0886f89d22a35
     <TableRow
 
         android:id="@+id/tableRow"
@@ -47,18 +50,22 @@
         android:layout_height="500dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+<<<<<<< HEAD
+        android:layout_marginTop="4dp"
+=======
         android:layout_marginTop="55dp"
+>>>>>>> 5434ec83eaeeddd56bf0ececdff0886f89d22a35
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout5">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
 
             <LinearLayout
@@ -86,7 +93,7 @@
                         android:layout_weight="8"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Name" />
+                        android:text="ID" />
 
                     <Button
                         android:id="@+id/button4"
@@ -259,7 +266,6 @@
                         android:textSize="20dp"
                         android:textStyle="normal" />
 
-
                     <TextView
                         android:id="@+id/textView12"
                         android:layout_width="match_parent"
@@ -267,9 +273,9 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="캐릭터 설정"
+                        android:text="주민번호 앞6자리 입력"
                         android:textColor="#000000"
-                        android:textSize="20dp"
+                        android:textSize="10dp"
                         android:textStyle="normal" />
 
 
@@ -422,10 +428,87 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="성별"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal" />
+
+                    <Spinner
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="상태메세지"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        tools:text="상태메세지" />
+
+                    <EditText
+                        android:id="@+id/editText9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="상태를 입력하세요/25자내외"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+
             </LinearLayout>
 
         </ScrollView>
 
+<<<<<<< HEAD
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="회원가입"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+    </TableRow>
+
+=======
 
     </TableRow>
 
@@ -446,4 +529,5 @@
         app:layout_constraintTop_toBottomOf="@+id/tableRow" />
 
 
+>>>>>>> 5434ec83eaeeddd56bf0ececdff0886f89d22a35
 </android.support.constraint.ConstraintLayout>
