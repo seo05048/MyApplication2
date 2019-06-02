@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.myapplication.ui.login.LoginActivity;
+
 public class JoinActivity extends AppCompatActivity {
     private ArrayAdapter adapter;
     private Spinner spinner;
@@ -35,7 +37,7 @@ public class JoinActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
 
-        spinner= (Spinner)findViewById(R.id.college);
+        spinner= (Spinner) findViewById(R.id.college);
         adapter= ArrayAdapter.createFromResource(this, R.array.college, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
@@ -48,7 +50,7 @@ public class JoinActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
 
-        btnJoin = (Button) findViewById(R.id.button3);
+        btnJoin = (Button) findViewById(R.id.button8);
 
         helper = new DatabaseOpenHelper(JoinActivity.this, DatabaseOpenHelper.tableName, null, version);
         database = helper.getWritableDatabase();
@@ -78,7 +80,7 @@ public class JoinActivity extends AppCompatActivity {
                     helper.insertUser(database,id,pw);
                     Toast toast = Toast.makeText(JoinActivity.this, "가입이 완료되었습니다. 로그인을 해주세요.", Toast.LENGTH_SHORT);
                     toast.show();
-                    Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(intent);
                     finish();
                 }
