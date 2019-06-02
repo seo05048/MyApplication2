@@ -32,24 +32,25 @@
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
     </android.support.constraint.ConstraintLayout>
-
 
 
     <TableRow
 
         android:id="@+id/tableRow"
         android:layout_width="394dp"
-        android:layout_height="600dp"
+        android:layout_height="500dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="55dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,8 +82,8 @@
                         android:id="@+id/editText2"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="8"
                         android:layout_margin="5dp"
+                        android:layout_weight="8"
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:text="Name" />
@@ -92,9 +93,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginEnd="10dp"
                         android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="0dp"
                         android:layout_weight="2"
                         android:text="중복확인" />
                 </LinearLayout>
@@ -118,8 +119,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="5"
                         android:ems="10"
-                        android:text="Password"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        android:text="Password" />
 
                 </LinearLayout>
 
@@ -149,9 +150,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginEnd="10dp"
                         android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="0dp"
                         android:layout_weight="2"
                         android:text="중복확인" />
 
@@ -167,8 +168,8 @@
                         android:id="@+id/textView8"
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
-                        android:background="#FFADAD"
                         android:layout_margin="10dp"
+                        android:background="#FFADAD"
                         android:gravity="center"
                         android:text="단과대"
                         android:textColor="#ffffff"
@@ -232,8 +233,8 @@
                         android:id="@+id/editText5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:layout_margin="5dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:text="Name" />
@@ -302,8 +303,8 @@
                         android:id="@+id/imageButton1"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:background="#FFF8F8"
                         android:layout_weight="1"
+                        android:background="#FFF8F8"
                         app:srcCompat="@drawable/beer" />
 
                     <ImageButton
@@ -318,8 +319,8 @@
                         android:id="@+id/imageButton3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:background="#FFF8F8"
                         android:layout_weight="1"
+                        android:background="#FFF8F8"
                         tools:srcCompat="@drawable/eat" />
                 </LinearLayout>
 
@@ -332,8 +333,8 @@
                         android:id="@+id/imageButton4"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:background="#FFF8F8"
                         android:layout_weight="1"
+                        android:background="#FFF8F8"
                         tools:srcCompat="@drawable/love" />
 
                     <ImageButton
@@ -400,9 +401,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginEnd="10dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="0dp"
                         android:layout_weight="1" />
 
                     <TextView
@@ -426,22 +427,23 @@
         </ScrollView>
 
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:text="회원가입"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tableRow" />
-
     </TableRow>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
 
 
 </android.support.constraint.ConstraintLayout>
