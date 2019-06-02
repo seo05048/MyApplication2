@@ -40,7 +40,9 @@
     </android.support.constraint.ConstraintLayout>
 
 
+
     <TableRow
+
         android:id="@+id/tableRow"
         android:layout_width="394dp"
         android:layout_height="600dp"
@@ -80,8 +82,8 @@
                         android:id="@+id/editText2"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_margin="5dp"
                         android:layout_weight="8"
+                        android:layout_margin="5dp"
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:text="Name" />
@@ -91,9 +93,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="10dp"
                         android:layout_marginRight="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="0dp"
                         android:layout_weight="2"
                         android:text="중복확인" />
                 </LinearLayout>
@@ -105,8 +107,8 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="482dp"
-                        android:layout_height="720dp"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         tools:srcCompat="@drawable/ic_lock_black_24dp" />
 
@@ -117,8 +119,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="5"
                         android:ems="10"
-                        android:inputType="textPassword"
-                        android:text="Password" />
+                        android:text="Password"
+                        android:inputType="textPassword" />
 
                 </LinearLayout>
 
@@ -148,9 +150,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="10dp"
                         android:layout_marginRight="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="0dp"
                         android:layout_weight="2"
                         android:text="중복확인" />
 
@@ -166,8 +168,8 @@
                         android:id="@+id/textView8"
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="10dp"
                         android:background="#FFADAD"
+                        android:layout_margin="10dp"
                         android:gravity="center"
                         android:text="단과대"
                         android:textColor="#ffffff"
@@ -176,7 +178,7 @@
                         tools:text="단과대" />
 
                     <Spinner
-                        android:id="@+id/college"
+                        android:id="@+id/spinner1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -202,7 +204,7 @@
                         tools:text="학과" />
 
                     <Spinner
-                        android:id="@+id/major"
+                        android:id="@+id/spinner"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -231,8 +233,8 @@
                         android:id="@+id/editText5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="5dp"
                         android:layout_weight="1"
+                        android:layout_margin="5dp"
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:text="Name" />
@@ -266,7 +268,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="캐릭터 설정"
-                        android:textColor="#000000"
+                        android:textColor="#00000"
                         android:textSize="20dp"
                         android:textStyle="normal" />
 
@@ -301,8 +303,8 @@
                         android:id="@+id/imageButton1"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
                         android:background="#FFF8F8"
+                        android:layout_weight="1"
                         app:srcCompat="@drawable/beer" />
 
                     <ImageButton
@@ -317,8 +319,8 @@
                         android:id="@+id/imageButton3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
                         android:background="#FFF8F8"
+                        android:layout_weight="1"
                         tools:srcCompat="@drawable/eat" />
                 </LinearLayout>
 
@@ -331,8 +333,8 @@
                         android:id="@+id/imageButton4"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
                         android:background="#FFF8F8"
+                        android:layout_weight="1"
                         tools:srcCompat="@drawable/love" />
 
                     <ImageButton
@@ -399,9 +401,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
                         android:layout_marginRight="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
                         android:layout_weight="1" />
 
                     <TextView
@@ -420,134 +422,29 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioGroup
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:backgroundTint="#000000"
-                            android:text="날짜설정" />
-
-                    </RadioGroup>
-
-                    <EditText
-                        android:id="@+id/editText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#000000"
-                        android:ems="10"
-                        android:inputType="time" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView19"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:background="#FFADAD"
-                        android:gravity="center"
-                        android:text="아이디 공개여부"
-                        android:textColor="#ffffff"
-                        android:textSize="20dp"
-                        android:textStyle="normal" />
-
-
-                    <CheckBox
-                        android:id="@+id/checkBox"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:background="#FFADAD"
-                        android:gravity="center"
-                        android:text="Yes"
-                        android:textColor="#ffffff"
-                        android:textSize="20dp"
-                        android:textStyle="normal" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView21"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:background="#FFADAD"
-                        android:gravity="center"
-                        android:text="상태메세지를 입력하세요"
-                        android:textColor="#ffffff"
-                        android:textSize="20dp"
-                        android:textStyle="normal" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView22"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:background="#FFADAD"
-                        android:gravity="center"
-                        android:text="연락방법"
-                        android:textColor="#ffffff"
-                        android:textSize="20dp"
-                        android:textStyle="normal" />
-
-                    <Spinner
-                        android:id="@+id/contact"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1" />
-
-                </LinearLayout>
-
             </LinearLayout>
-
-
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="회원가입"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tableRow" />
 
         </ScrollView>
 
-    </TableRow>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="회원가입"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow" />
 
 
-</android.support.constraint.ConstraintLayout>
+
+</TableRow>
+
+
+    </android.support.constraint.ConstraintLayout>
