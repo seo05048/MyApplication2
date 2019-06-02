@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/coordinatorLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".JoinActivity">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/appBarLayout5"
@@ -177,7 +177,7 @@
                         tools:text="단과대" />
 
                     <Spinner
-                        android:id="@+id/spinner1"
+                        android:id="@+id/college"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -203,7 +203,7 @@
                         tools:text="학과" />
 
                     <Spinner
-                        android:id="@+id/spinner"
+                        android:id="@+id/major"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -267,7 +267,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="캐릭터 설정"
-                        android:textColor="#00000"
+                        android:textColor="#000000"
                         android:textSize="20dp"
                         android:textStyle="normal" />
 
@@ -441,9 +441,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tableRow" />
 
+    </TableRow>
 
 
-</TableRow>
-
-
-    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
