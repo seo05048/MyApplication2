@@ -6,38 +6,22 @@ import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
-import android.widget.Toast;
 
 import com.example.myapplication.ui.fragment.Fragment1;
 import com.example.myapplication.ui.fragment.Fragment2;
 import com.example.myapplication.ui.fragment.Fragment3;
-import com.example.myapplication.ui.notice.Favorite;
-import com.example.myapplication.ui.notice.FavoriteAdapter;
-
-//import android.view.View;
-//import android.support.design.widget.FloatingActionButton;
-//import android.support.design.widget.Snackbar;
-//import android.widget.TextView;
-//import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Fragment1 fragment1;
     Fragment2 fragment2;
     Fragment3 fragment3;
-    private ArrayAdapter adapter;
-    private Spinner spinner;
 
     private TextView mTextMessage;
 
@@ -81,11 +65,6 @@ public class MainActivity extends AppCompatActivity {
         fragment2 = new Fragment2();
         fragment3 = new Fragment3();
 
-
-
-
-
-
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment1).commit();
 
         BottomNavigationView bottomNavigation = findViewById(R.id.nav_view);
@@ -107,28 +86,18 @@ public class MainActivity extends AppCompatActivity {
 
                             case R.id.navigation_notifications:
                                 //Toast.makeText(getApplicationContext(), "개별 친구 찾기로 이동", Toast.LENGTH_LONG).show();
-
                                 getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment3).commit();
 
-
-
                                 return true;
-
                         }
                         return false;
                     }
                 }
-
-
         );
-
-
-
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //return super.onCreateOptionsMenu(menu);
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu, menu);
         return true;
@@ -139,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
         //return super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
             case R.id.action_settings:
-                // User chose the "Settings" item, show the app settings UI...
                 //Toast.makeText(getApplicationContext(), "환경설정", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(this, tabActivity.class);//tabAct열기
                 startActivity(intent);//tabAct
