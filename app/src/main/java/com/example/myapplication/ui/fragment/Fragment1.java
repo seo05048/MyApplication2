@@ -13,8 +13,6 @@ import android.view.ViewGroup;
 import com.example.myapplication.R;
 import com.example.myapplication.ui.notice.FavoriteAdapter;
 import com.example.myapplication.ui.notice.Favorite;
-
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Fragment1 extends Fragment {
@@ -39,7 +37,6 @@ public class Fragment1 extends Fragment {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
-
         return v;
     }
 
@@ -62,6 +59,5 @@ public class Fragment1 extends Fragment {
         favoritesList.add(new Favorite("고민상담소 그룹 채팅방이 오픈되었습니다."));
         favoritesList.add(new Favorite("디저트 탐방 그룹 채팅방이 오픈되었습니다."));
         favoritesList.add(new Favorite("PC방을 가는 그룹 채팅방이 오픈되었습니다."));
-
     }
 }
