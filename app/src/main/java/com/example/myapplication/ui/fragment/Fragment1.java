@@ -56,8 +56,11 @@ public class Fragment1 extends Fragment {
 
         favoritesList.clear();
         favoritesList.add(new Favorite("1.1버전이 업데이트 되었습니다."));
-        favoritesList.add(new Favorite("맥주 그룹 채팅방이 오픈되었습니다."));
+        favoritesList.add(new Favorite("맛집 그룹 채팅방이 오픈되었습니다."));
         favoritesList.add(new Favorite("운동을 좋아하는 그룹 채팅방이 오픈되었습니다."));
+        favoritesList.add(new Favorite("맥주를 좋아하는 그룹 채팅방이 오픈되었습니다."));
+        favoritesList.add(new Favorite("고민상담소 그룹 채팅방이 오픈되었습니다."));
+        favoritesList.add(new Favorite("디저트 탐방 그룹 채팅방이 오픈되었습니다."));
         favoritesList.add(new Favorite("PC방을 가는 그룹 채팅방이 오픈되었습니다."));
 
     }
