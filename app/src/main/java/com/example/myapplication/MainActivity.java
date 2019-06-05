@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-        getSupportActionBar().setTitle("SKKUNET");//툴바의 제목
+        getSupportActionBar().setTitle("성균 프렌즈");//툴바의 제목
 
         fragment1 = new Fragment1();
         fragment2 = new Fragment2();
