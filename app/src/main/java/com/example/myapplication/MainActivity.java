@@ -20,8 +20,8 @@ import android.widget.Toast;
 import com.example.myapplication.ui.fragment.Fragment1;
 import com.example.myapplication.ui.fragment.Fragment2;
 import com.example.myapplication.ui.fragment.Fragment3;
-import com.example.myapplication.ui.notice.Person;
-import com.example.myapplication.ui.notice.PersonAdapter;
+import com.example.myapplication.ui.notice.Favorite;
+import com.example.myapplication.ui.notice.FavoriteAdapter;
 
 //import android.view.View;
 //import android.support.design.widget.FloatingActionButton;
