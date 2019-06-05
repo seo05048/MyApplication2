@@ -13,6 +13,7 @@ import android.widget.Spinner;
 
 
 import com.example.myapplication.R;
+import com.example.myapplication.ui.notice.FavoriteAdapter;
 
 public class Fragment3 extends Fragment {//원래는 App->Fragment였음
     private ArrayAdapter adapter;
@@ -20,8 +21,13 @@ public class Fragment3 extends Fragment {//원래는 App->Fragment였음
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
 
+        View v =  inflater.inflate(R.layout.fragment3, container, false);
 
-        return inflater.inflate(R.layout.fragment3, container, false);
+        spinner= v.findViewById(R.id.hobby);
+        adapter= ArrayAdapter.createFromResource(getContext(), R.array.hobby, android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        return v;
     }
 
 }

@@ -432,7 +432,7 @@
                         tools:text="상태메세지" />
 
                     <EditText
-                        android:id="@+id/editText9"
+                        android:id="@+id/editText10"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
