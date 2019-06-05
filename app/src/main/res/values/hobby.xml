@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name ="hobby">
+        <item>선택하세요</item>
         <item>맛집탐방/음주</item>
         <item>게임하기</item>
         <item>운동하기</item>
