@@ -27,6 +27,10 @@ public class Fragment3 extends Fragment {//원래는 App->Fragment였음
         adapter= ArrayAdapter.createFromResource(getContext(), R.array.hobby, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
+        spinner= v.findViewById(R.id.city);
+        adapter= ArrayAdapter.createFromResource(getContext(), R.array.city, android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
         return v;
     }
 

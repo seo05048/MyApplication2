@@ -87,6 +87,7 @@
                     android:background="#FFD147"
                     android:gravity="center"
                     android:text="맛집 탐방"
+                    android:onClick="onButtonbob"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -110,6 +111,7 @@
                     android:background="#FFD147"
                     android:gravity="center"
                     android:text="혜화 맥주팟"
+                    android:onClick="onButttonbeer"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -149,6 +151,7 @@
                     android:background="#FFD147"
                     android:gravity="center"
                     android:text="운동인의 방"
+                    android:onClick="onButttonex"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -173,6 +176,7 @@
                     android:background="#FFD147"
                     android:gravity="center"
                     android:text="연애 상담"
+                    android:onClick="onButttonlove"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -211,6 +215,7 @@
                     android:background="#FFD147"
                     android:gravity="center"
                     android:text="디저트 탐방"
+                    android:onClick="onButttoncafe"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -235,6 +240,7 @@
                     android:background="#FFD147"
                     android:gravity="center"
                     android:text="혜화 게임팟"
+                    android:onClick="onButttongame"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold" />

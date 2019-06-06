@@ -37,37 +37,41 @@ public class JoinActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
 
-        spinner= (Spinner) findViewById(R.id.college);
-        adapter= ArrayAdapter.createFromResource(this, R.array.college, android.R.layout.simple_spinner_dropdown_item);
+        spinner = (Spinner) findViewById(R.id.college);
+        adapter = ArrayAdapter.createFromResource(this, R.array.college, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
 
-        spinner= (Spinner)findViewById(R.id.major);
-        adapter= ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_spinner_dropdown_item);
+        spinner = (Spinner) findViewById(R.id.major);
+        adapter = ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-        spinner= (Spinner)findViewById(R.id.hobby);
-        adapter= ArrayAdapter.createFromResource(this, R.array.hobby, android.R.layout.simple_spinner_dropdown_item);
+        spinner = (Spinner) findViewById(R.id.hobby);
+        adapter = ArrayAdapter.createFromResource(this, R.array.hobby, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-        spinner= (Spinner)findViewById(R.id.city);
-        adapter= ArrayAdapter.createFromResource(this, R.array.city, android.R.layout.simple_spinner_dropdown_item);
+        spinner = (Spinner) findViewById(R.id.city);
+        adapter = ArrayAdapter.createFromResource(this, R.array.city, android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner = (Spinner) findViewById(R.id.gender);
+        adapter = ArrayAdapter.createFromResource(this, R.array.gender, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
 
-        btnJoin = (Button) findViewById(R.id.button8);
+        //btnJoin = (Button) findViewById(R.id.button8);
 
         helper = new DatabaseOpenHelper(JoinActivity.this, DatabaseOpenHelper.tableName, null, version);
         database = helper.getWritableDatabase();
 
-        btnJoin.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
 
-                String id = username.getText().toString();
+        //btnJoin.setOnClickListener(new View.OnClickListener(){
+        //@Override
+        //public void onClick(View view) {
+                /*String id = username.getText().toString();
                 String pw = password.getText().toString();
 
                 if(id.length() == 0 || pw.length() == 0) {
@@ -93,12 +97,11 @@ public class JoinActivity extends AppCompatActivity {
                     finish();
                 }
             }
-        });
-
-
-
-
+        });*/
 
     }
-
-}
+        public void onbutton8(View v){
+            Toast.makeText(getApplicationContext(), "회원가입이 완료되었습니다.", Toast.LENGTH_LONG).show();
+            finish();
+    }
+    }

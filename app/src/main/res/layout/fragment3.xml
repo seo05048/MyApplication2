@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
@@ -9,9 +10,9 @@
 
 
     <ScrollView
-        android:layout_width="391dp"
-        android:layout_height="657dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="392dp"
+        android:layout_height="642dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,6 +91,7 @@
                 </LinearLayout>
 
             </LinearLayout>
+            //여기서 부터가 시작_한사람
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -98,21 +100,21 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/imageButton10"
-                        android:layout_width="140dp"
-                        android:layout_height="100dp"
+                        android:id="@+id/imageButtonG"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="#FFF8F8"
                         app:srcCompat="@drawable/game" />
 
                     <TextView
                         android:id="@+id/editText9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_width="284dp"
+                        android:layout_height="88dp"
                         android:layout_weight="8"
                         android:ems="10"
                         android:gravity="center"
@@ -187,6 +189,399 @@
                 </LinearLayout>
 
             </LinearLayout>
+            //여기서 부터가 시작_한사람
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonB"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FFF8F8"
+                        app:srcCompat="@drawable/beer" />
+
+                    <TextView
+                        android:id="@+id/editText9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        android:layout_weight="8"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="이정민"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="학과/나이"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        tools:text="학과/나이" />
+
+                    <TextView
+                        android:id="@+id/editText15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="한문교육과 / 23"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="66dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="상태메시지"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal" />
+
+
+                    <TextView
+                        android:id="@+id/editText16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="역시 한옥영 교수님이 최고!"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            //여기서 부터가 시작_한사람
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FFF8F8"
+                        app:srcCompat="@drawable/eat" />
+
+                    <TextView
+                        android:id="@+id/editText9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        android:layout_weight="8"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="백승지"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="학과/나이"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        tools:text="학과/나이" />
+
+                    <TextView
+                        android:id="@+id/editText15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="한문교육과 / 24"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="66dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="상태메시지"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal" />
+
+
+                    <TextView
+                        android:id="@+id/editText16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="새내기 19학번 백승지입니다!"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            //여기서 부터가 시작_한사람
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonD"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FFF8F8"
+                        app:srcCompat="@drawable/dessert" />
+
+                    <TextView
+                        android:id="@+id/jytN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        android:layout_weight="8"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="조영태"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/deptAge4"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="학과/나이"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        tools:text="학과/나이" />
+
+                    <TextView
+                        android:id="@+id/jytI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="컴퓨터교육과 / 26"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sangtae4"
+                        android:layout_width="66dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="상태메시지"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal" />
+
+
+                    <TextView
+                        android:id="@+id/jytM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="#복학#친구를 찾습니다"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            //여기서 부터가 시작_한사람
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FFF8F8"
+                        app:srcCompat="@drawable/exercise" />
+
+                    <TextView
+                        android:id="@+id/pjkN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        android:layout_weight="8"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="박정현"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/deptAge5"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="학과/나이"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        tools:text="학과/나이" />
+
+                    <TextView
+                        android:id="@+id/pjhI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="한문교육과 / 22"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sangtae5"
+                        android:layout_width="66dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFADAD"
+                        android:gravity="center"
+                        android:text="상태메시지"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal" />
+
+
+                    <TextView
+                        android:id="@+id/pjhM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="외로운 친구를 위한 #프로그램 개발"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
