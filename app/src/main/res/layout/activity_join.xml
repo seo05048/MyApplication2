@@ -69,8 +69,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="8"
                         android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Name" />
+                        android:hint="ID"
+                        android:inputType="textPersonName" />
 
                     <Button
                         android:id="@+id/button4"
@@ -103,8 +103,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="5"
                         android:ems="10"
-                        android:inputType="textPassword"
-                        android:text="Password" />
+                        android:hint="Password"
+                        android:inputType="textPassword" />
 
                 </LinearLayout>
 
@@ -126,8 +126,8 @@
                         android:layout_height="match_parent"
                         android:layout_weight="8"
                         android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="닉네임" />
+                        android:hint="닉네임"
+                        android:inputType="textPersonName" />
 
                     <Button
                         android:id="@+id/button5"
@@ -220,8 +220,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="ID" />
+                        android:hint="이름"
+                        android:inputType="textPersonName" />
 
                 </LinearLayout>
 
@@ -250,8 +250,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="주민번호앞 6자리" />
+                        android:hint="주민번호앞 6자리"
+                        android:inputType="textPersonName" />
 
 
                 </LinearLayout>
