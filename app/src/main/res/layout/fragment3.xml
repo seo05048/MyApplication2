@@ -119,7 +119,7 @@
                         android:ems="10"
                         android:gravity="center"
                         android:inputType="textPersonName"
-                        android:text="정지수"
+                        android:text="지수 정"
                         android:textSize="17sp" />
 
 

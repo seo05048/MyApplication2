@@ -104,4 +104,16 @@ public class JoinActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "회원가입이 완료되었습니다.", Toast.LENGTH_LONG).show();
             finish();
     }
+
+    public void onbutton9(View v){
+        Toast.makeText(getApplicationContext(), "사용 가능한 아이디 입니다 :)", Toast.LENGTH_LONG).show();
+
+    }
+
+    public void onbutton10(View v){
+        Toast.makeText(getApplicationContext(), "사용 가능한 닉네임 입니다 :D", Toast.LENGTH_LONG).show();
+
+    }
+
+
     }
